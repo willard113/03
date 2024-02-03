@@ -1,0 +1,166 @@
+#menu,
+#head,
+#phone,
+#nav,
+#nav-menu,
+#nav-search,
+#shop,
+#sidebar1,
+#sidebar2,
+#sidebar3,
+#catalog,
+#events,
+#pop {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#body {
+    margin: 0;
+}
+
+#menu,#head {
+    flex-direction: row;
+    padding: 10px;
+}
+
+#menu{
+    background-color:midnightblue;
+    text-decoration: underline;
+    color: white;
+    height: 30px;
+    justify-content: end;
+    gap: 15px;
+}
+
+#head{
+    height: 60px;
+    justify-content:space-between;
+}
+
+#nav-menu{
+    gap:15px;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+#nav{
+    flex-direction: column;
+    gap: 5px;
+    text-transform: uppercase;
+    justify-content: baseline;
+}
+
+.red{
+    color: red;
+}
+
+#logo{
+    height: 100%;
+    width: auto;
+}
+
+#nav-search{
+    width: 100%;
+}
+
+#search{
+    border-color: royalblue;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    height: 28px;
+    margin-right: -10px;
+    padding: 0 10px 0 0;
+    width: 100%;
+}
+
+#head-menu{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    align-items: center;
+}
+
+#head-menu{
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#phone{
+    flex-direction: column;
+}
+
+button{
+    background-color:royalblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size:x-large;
+}
+
+#slider img{
+    width: 100%;
+}
+
+#shop{
+    flex-direction: row;
+    align-items: normal;
+    padding: 10px;
+    gap: 20px;
+}
+
+#sidebar1{
+    width: 200px;
+}
+
+#sidebar2,#sidebar2 img{
+    width: 500px;
+}
+
+#sidebar1,
+#sidebar2,
+#sidebar3,
+#catalog,
+#events,
+#pop{
+    flex-direction: column;
+}
+
+h2{
+    text-transform: uppercase;
+    color:midnightblue;
+}
+
+#catalog{
+    flex-direction: column;
+    align-items: normal;
+    gap: 10px;
+}
+
+#catalog div,#pop .item{
+    font-weight: bold;
+}
+
+#pop{
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pop .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    font-size:larger;
+    color: midnightblue;
+}
+
+#pop .item, #pop .item img{
+    width: 150px;
+}
