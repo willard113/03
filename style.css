@@ -49,7 +49,6 @@
     flex-direction: column;
     gap: 5px;
     text-transform: uppercase;
-    justify-content: baseline;
 }
 
 .red{
@@ -113,11 +112,19 @@ button{
 }
 
 #sidebar1{
-    width: 200px;
+    flex-grow: 1;
 }
 
-#sidebar2,#sidebar2 img{
-    width: 500px;
+#sidebar2{
+    gap: 10px;
+}
+
+#sidebar2,#sidebar3{
+    flex-grow: 2;
+}
+
+#sidebar2 img{
+    width: 100%;
 }
 
 #sidebar1,
@@ -127,6 +134,12 @@ button{
 #events,
 #pop{
     flex-direction: column;
+}
+
+#sidebar1,
+#sidebar2,
+#sidebar3{
+    flex-basis: 0;
 }
 
 h2{
@@ -163,4 +176,94 @@ h2{
 
 #pop .item, #pop .item img{
     width: 150px;
+}
+
+#hamburger{
+    display: none;
+    width: 30px;
+}
+
+#hamburger hr{
+    border-style: double;
+    border-width: 1px;
+}
+
+
+@media screen and (max-width: 400px){
+    #pop .item img{
+        width: 100px;
+    }
+
+    #pop .item{
+        font-size: small;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #shop{
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    #catalog{
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    #catalog div{
+        padding: 5px;
+        text-align: center;
+    }
+
+    #sidebar2{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #sidebar2{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #nav{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        order: 4;
+    }
+    #phone {
+        flex-direction: row;
+        gap: 15px;
+        order: 1;
+    }
+    #enter{
+        order: 3;
+    }
+    #cart{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #enter,#cart{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #phone{
+        display: none;
+    }
 }
